@@ -2,7 +2,7 @@
 FROM eclipse-temurin:21-jdk AS build
 FROM maven:3.9-eclipse-temurin-21 AS build
 WORKDIR /app
-Copy everything needed for the build
+
 COPY . .
 RUN chmod +x mvnw
 COPY pom.xml .
