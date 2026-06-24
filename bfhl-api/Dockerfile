@@ -7,7 +7,7 @@ COPY . .
 RUN chmod +x mvnw
 COPY pom.xml .
 COPY src/ src/
-Build the application
+
 RUN ./mvnw clean package -DskipTests -q
 RUN mvn clean package -DskipTests -q
 # ---- Runtime Stage ----
